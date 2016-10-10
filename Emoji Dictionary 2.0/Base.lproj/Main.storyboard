@@ -37,5 +37,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="P2F-YQ-qcO">
+            <objects>
+                <viewController id="sUq-sq-j2t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5r1-sX-d1o"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zal-PS-7W4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZH9-jQ-2fE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVN-lY-dY6">
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyU-fI-J04">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qyU-fI-J04" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="Jen-3F-WHq"/>
+                            <constraint firstItem="qyU-fI-J04" firstAttribute="top" secondItem="oVN-lY-dY6" secondAttribute="bottom" constant="90" id="fi6-3v-RJf"/>
+                            <constraint firstItem="qyU-fI-J04" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="hj1-V6-pHj"/>
+                            <constraint firstItem="oVN-lY-dY6" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="ja4-3k-d2F"/>
+                            <constraint firstItem="oVN-lY-dY6" firstAttribute="top" secondItem="5r1-sX-d1o" secondAttribute="bottom" constant="40" id="q78-nz-DHl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qig-RZ-pGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="107"/>
+        </scene>
     </scenes>
 </document>
