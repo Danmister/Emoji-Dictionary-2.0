@@ -10,6 +10,8 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+    @IBOutlet weak var birthYearLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var definitionLabel: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
     
@@ -24,7 +26,9 @@ class DefinitionViewController: UIViewController {
         emojiLabel.text = emoji
         
         if emoji == "🐝" {
-            definitionLabel.text = "bee"
+            definitionLabel.text = "Bee"
+            categoryLabel.text = "Category: Animal"
+            birthYearLabel.text = "BirthYear: 2000"
         }
         
         
