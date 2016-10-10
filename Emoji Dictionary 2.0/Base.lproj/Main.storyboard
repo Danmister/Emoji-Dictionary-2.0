@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="972" y="38.23088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="P2F-YQ-qcO">
             <objects>
-                <viewController id="sUq-sq-j2t" sceneMemberID="viewController">
+                <viewController id="sUq-sq-j2t" customClass="DefinitionViewController" customModule="Emoji_Dictionary_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5r1-sX-d1o"/>
                         <viewControllerLayoutGuide type="bottom" id="Zal-PS-7W4"/>
@@ -72,6 +72,9 @@
                             <constraint firstItem="oVN-lY-dY6" firstAttribute="top" secondItem="5r1-sX-d1o" secondAttribute="bottom" constant="40" id="q78-nz-DHl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="oVN-lY-dY6" id="GMJ-cE-m16"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qig-RZ-pGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
