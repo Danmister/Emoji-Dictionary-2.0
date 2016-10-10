@@ -12,6 +12,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var emojiList: UITableView!
     
+    var emojis = ["🐝", "🙃", "🤖" , "👌"]
+    //array of emojis
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,13 +24,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return emojis.count
         //asking how many cells, answer in return code
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(indexPath.row)
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Hello There"
+        cell.textLabel?.text = emojis[indexPath.row]
         return cell
         //asking what kind of cell and repond with compiler genaric cell with string perviosily writen
     }
