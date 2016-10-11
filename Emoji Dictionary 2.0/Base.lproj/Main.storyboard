@@ -62,12 +62,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H6-Yd-zvc">
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDe-7t-49N">
+>>>>>>> master
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wl-s7-YXH">
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypo-1a-Too">
+>>>>>>> master
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -75,20 +83,36 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GDe-7t-49N" firstAttribute="top" secondItem="qyU-fI-J04" secondAttribute="bottom" constant="20" id="CaL-SZ-6Ik"/>
                             <constraint firstItem="qyU-fI-J04" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="Jen-3F-WHq"/>
+<<<<<<< HEAD
                             <constraint firstItem="5H6-Yd-zvc" firstAttribute="top" secondItem="qyU-fI-J04" secondAttribute="bottom" constant="18.5" id="OnH-rk-VV0"/>
                             <constraint firstItem="5H6-Yd-zvc" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="akD-0m-VRN"/>
                             <constraint firstItem="5Wl-s7-YXH" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="eRw-TK-sgD"/>
+=======
+                            <constraint firstItem="ypo-1a-Too" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="WW6-ey-fW2"/>
+                            <constraint firstItem="ypo-1a-Too" firstAttribute="top" secondItem="GDe-7t-49N" secondAttribute="bottom" constant="20" id="c9r-uM-nac"/>
+>>>>>>> master
                             <constraint firstItem="qyU-fI-J04" firstAttribute="top" secondItem="oVN-lY-dY6" secondAttribute="bottom" constant="90" id="fi6-3v-RJf"/>
                             <constraint firstItem="qyU-fI-J04" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="hj1-V6-pHj"/>
                             <constraint firstItem="oVN-lY-dY6" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="ja4-3k-d2F"/>
                             <constraint firstItem="oVN-lY-dY6" firstAttribute="top" secondItem="5r1-sX-d1o" secondAttribute="bottom" constant="40" id="q78-nz-DHl"/>
+<<<<<<< HEAD
                             <constraint firstItem="5Wl-s7-YXH" firstAttribute="top" secondItem="5H6-Yd-zvc" secondAttribute="bottom" constant="17" id="rMx-Wz-T87"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="CategoryLabel" destination="5H6-Yd-zvc" id="JxH-3g-XJU"/>
                         <outlet property="birthYearLabel" destination="5Wl-s7-YXH" id="m27-xV-rhq"/>
+=======
+                            <constraint firstItem="GDe-7t-49N" firstAttribute="centerX" secondItem="ZH9-jQ-2fE" secondAttribute="centerX" id="xo2-yA-XfE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthYear" destination="ypo-1a-Too" id="Its-Yf-MmU"/>
+                        <outlet property="birthYearLabel" destination="ypo-1a-Too" id="Res-dh-BVm"/>
+                        <outlet property="categoryLabel" destination="GDe-7t-49N" id="36p-72-sTP"/>
+>>>>>>> master
                         <outlet property="definitionLabel" destination="qyU-fI-J04" id="lhw-3J-7r0"/>
                         <outlet property="emojiLabel" destination="oVN-lY-dY6" id="GMJ-cE-m16"/>
                     </connections>
