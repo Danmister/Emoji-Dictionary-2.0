@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var emojiList: UITableView!
     
-    var emojis = ["🐝", "🙃", "🤖" , "👌"]
+    var emojis : [Emoji] = []
     //array of emojis
     
     override func viewDidLoad() {
@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         emojiList.dataSource = self
         emojiList.delegate = self
+        emojis = makeEmojiArray()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,7 +32,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
         let cell = UITableViewCell()
-        cell.textLabel?.text = emojis[indexPath.row]
+        let emoji = emojis[indexPath.row]
+        cell.textLabel?.text = emoji.stringEmoji
         return cell
         //asking what kind of cell and repond with compiler genaric cell with string perviosily writen
     }
@@ -45,7 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print(sender)
         let defVC = segue.destination as! DefinitionViewController
-        defVC.emoji = sender as! String 
+        defVC.emoji = sender as! Emoji
         
     }
     
@@ -53,6 +55,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func makeEmojiArray() -> [Emoji] {
+        
+        let emoji1 = Emoji()
+        emoji1.stringEmoji = "🐝"
+        emoji1.birthYear = "2000"
+        emoji1.category = "Animal"
+        emoji1.definition = "A Bee"
+        
+        return [emoji1]
+    }
+
     
     
 }
